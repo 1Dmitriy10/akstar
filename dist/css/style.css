@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@400;700&family=Raleway:wght@400;500;600;700;800;900&family=Russo+One&display=swap");
+@font-face {
+  font-family: Bebas Neue Bold;
+  font-display: swap;
+  src: url("../fonts/Bebas Neue Bold.woff2") format("woff2"), url("../fonts/Bebas Neue Bold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: transparent;
+  background-color: transparent;
+}
+
+ul, summary {
+  list-style: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1167px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 930px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 689px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 510px;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    max-width: 0;
+  }
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background: #f9f9f9;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  padding: 10px 10px 15px 10px;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  gap: 80px;
+}
+@media (max-width: 768px) {
+  .nav {
+    gap: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+}
+
+.nav__link {
+  color: var(--Black, #191919);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.burger-menu-wrap {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 28px;
+  right: 32px;
+  z-index: 20;
+}
+.burger-menu-wrap:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 600px) {
+  .burger-menu-wrap {
+    display: flex;
+  }
+}
+
+.burger-menu {
+  display: flex;
+  width: 32px;
+  height: 3px;
+  background-color: black;
+  position: relative;
+  z-index: 20;
+}
+.burger-menu::before {
+  content: "";
+  display: flex;
+  width: 32px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  top: 12px;
+  transition: 0.5s;
+}
+.burger-menu::after {
+  content: "";
+  display: flex;
+  width: 32px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  top: -12px;
+  transition: 0.5s;
+}
+.burger-menu.active {
+  display: flex;
+  width: 40px;
+  height: 0;
+  background-color: black;
+  position: relative;
+}
+.burger-menu.active::before {
+  content: "";
+  display: flex;
+  width: 40px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+.burger-menu.active::after {
+  content: "";
+  display: flex;
+  width: 40px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  transform: rotate(-45deg);
+  transition: 0.5s;
+}
+
+.nav_box-mob {
+  padding: 25px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(-436px);
+  background-color: #07086c;
+}
+.nav_box-mob.active {
+  transition: 0.5s;
+  opacity: 1;
+  transform: translateY(0);
+  z-index: 10;
+}
+
+.nav_box-mob-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}

@@ -1,0 +1,141 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background: #f9f9f9;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 15px 10px;
+    justify-content: space-between;
+}
+.header__wrap-logo {
+}
+.header__logo {
+}
+.nav {
+    display: flex;
+    gap: 80px;
+    @media (max-width: 768px) {
+        gap: 30px;
+    }
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+.nav__link {
+    color: var(--Black, #191919);
+    font-size: 18px;
+    font-weight: 600;
+}
+.burger-menu-wrap {
+}
+.burger-menu {
+}
+// ============Мобильное меню=======
+// Кнопка бургера
+.burger-menu-wrap {
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 28px;
+    right: 32px;
+    z-index: 20;
+    &:hover {
+        transform: scale(1.1);
+    }
+    @media (max-width: 600px) {
+        display: flex;
+    }
+}
+// Контент бургера
+.burger-menu {
+    display: flex;
+    width: 32px;
+    height: 3px;
+    background-color: black;
+    position: relative;
+    z-index: 20;
+    &::before {
+        content: "";
+        display: flex;
+        width: 32px;
+        height: 3px;
+        background-color: black;
+        position: absolute;
+        top: 12px;
+        transition: 0.5s;
+    }
+    &::after {
+        content: "";
+        display: flex;
+        width: 32px;
+        height: 3px;
+        background-color: black;
+        position: absolute;
+        top: -12px;
+        transition: 0.5s;
+    }
+    &.active {
+        display: flex;
+        width: 40px;
+        height: 0;
+        background-color: black;
+        position: relative;
+        &::before {
+            content: "";
+            display: flex;
+            width: 40px;
+            height: 3px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            transform: rotate(45deg);
+            transition: 0.5s;
+        }
+        &::after {
+            content: "";
+            display: flex;
+            width: 40px;
+            height: 3px;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            transform: rotate(-45deg);
+            transition: 0.5s;
+        }
+    }
+}
+// Мобильное меню
+.nav_box-mob {
+    padding: 25px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(-436px);
+    background-color: #07086c;
+    &.active {
+        transition: 0.5s;
+        opacity: 1;
+        transform: translateY(0);
+        z-index: 10;
+    }
+}
+.nav_box-mob-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
