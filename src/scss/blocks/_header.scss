@@ -13,14 +13,19 @@
     justify-content: space-between;
 }
 .header__wrap-logo {
+    position: relative;
+    z-index: 50;
 }
 .header__logo {
 }
 .nav {
     display: flex;
     gap: 80px;
+    @media (max-width: 992px) {
+        gap: 70px;
+    }
     @media (max-width: 768px) {
-        gap: 30px;
+        gap: 20px;
     }
     @media (max-width: 600px) {
         display: none;
@@ -30,6 +35,9 @@
     color: var(--Black, #191919);
     font-size: 18px;
     font-weight: 600;
+    @media (max-width: 600px) {
+        font-size: 28.8;
+    }
 }
 .burger-menu-wrap {
 }
@@ -115,6 +123,7 @@
 }
 // Мобильное меню
 .nav_box-mob {
+    height: 100vh;
     padding: 25px;
     position: fixed;
     display: flex;
@@ -122,10 +131,10 @@
     width: 100%;
     left: 0;
     top: 0;
-    opacity: 0;
+    // opacity: 0;
     transition: 0.5s;
-    transform: translateY(-436px);
-    background-color: #07086c;
+    transform: translateY(-100%);
+    background-color: #f5f5f5;
     &.active {
         transition: 0.5s;
         opacity: 1;
@@ -134,8 +143,51 @@
     }
 }
 .nav_box-mob-list {
+    padding: 176px 33px 36px 33px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.nav-mob-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    justify-content: flex-start;
+    height: 100%;
+}
+.nav-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+.nav-content__help {
+    color: var(--Black, #191919);
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 28.8px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.nav-content-item {
+    color: var(--Black, #191919);
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 28.8px;
+    font-weight: 500;
+}
+.nav-content__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12.8px 57.6px;
+    border-radius: 16px;
+    background: var(--Black, #191919);
+    color: var(--White, #fff);
+    font-family: Raleway;
+    font-size: 25.6px;
+    font-weight: 600;
+    line-height: 150%; /* 38.4px */
 }
