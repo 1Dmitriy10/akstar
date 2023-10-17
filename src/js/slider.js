@@ -21,3 +21,15 @@ export const catalogSlider = new Swiper('.catalog__slider', {
         },
     },
 });
+export const shopSlider = new Swiper('.shop__slider', {
+    slidesPerView: 1.2,
+    spaceBetween: 24,
+    breakpoints: {
+        726: {
+            slidesPerView: 3,
+        },
+        400: {
+            slidesPerView: 2,
+        },
+    },
+});
