@@ -520,6 +520,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
+  transform: translateY(0);
 }
 
 .nav-mob-wrap {
