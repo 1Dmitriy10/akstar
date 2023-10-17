@@ -516,7 +516,7 @@ body {
 }
 
 .nav_box-mob-list {
-  padding: 176px 33px 119px 33px;
+  padding: 176px 33px 0 33px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -568,6 +568,7 @@ body {
   font-size: 25.6px;
   font-weight: 600;
   line-height: 150%; /* 38.4px */
+  margin-bottom: 119px
 }
 
 .no-webp .main{
