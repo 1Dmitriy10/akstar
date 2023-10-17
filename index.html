@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="о сайте" />
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <title>akstar</title>
 </head>
 
 <body>
     <header class="header">
     <div class="container header__container">
-        <a href="#" class="header__wrap-logo">
+        <a href="https://shop.akstar-music.com/" class="header__wrap-logo">
             <picture><source srcset="img/header/logo.webp" type="image/webp"><img class="header__logo" src="img/header/logo.png" alt="akstat"></picture>
         </a>
         <nav class="nav">
@@ -63,7 +64,7 @@
                 akstar.help@gmail.com
             </a>
         </div>
-        <a href="#" class="nav-content__btn">
+        <a target="blank" href="https://t.me/akstar_music" class="nav-content__btn">
             Обратиться
         </a>
     </div>
@@ -136,7 +137,7 @@
             </h3>
         </div>
         <div class="main__down-row">
-            <a class="btn main__btn" href="#">
+            <a class="btn main__btn" href="#tarif">
                 Принять участие
             </a>
             <div class="main__down_row-text-wrap">
@@ -171,41 +172,76 @@
             </span>
             , КОТОРЫЕ ТЫ ВЫУЧИШЬ НА КУРСЕ
         </h2>
-        <div class="catalog__slider-box">
-            <div class="catalog__slider-item">
-                <div class="catalog__slider-wrap">
-                    <!-- <img src="" alt="img" class="catalog__slider-img"> -->
+        <div class="slider__wrap">
+            <!-- Главный контейнер -->
+            <div class="swiper catalog__slider">
+                <!-- Оболочка -->
+                <div class="swiper-wrapper">
+                    <!-- Слайды -->
+                    <div class="swiper-slide">
+                        <div class="catalog__slider-item">
+                            <div class="catalog__slider-wrap">
+                                <picture><source srcset="img/catalog/catalog__slide-img.webp" type="image/webp"><img src="img/catalog/catalog__slide-img.png" alt="img" class="catalog__slider-img"></picture>
+                            </div>
+                            <h3 class="catalog__slider-item-title">
+                                Черный Бумер
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="catalog__slider-item">
+                            <div class="catalog__slider-wrap">
+                                <picture><source srcset="img/catalog/catalog__slide-img.webp" type="image/webp"><img src="img/catalog/catalog__slide-img.png" alt="img" class="catalog__slider-img"></picture>
+                            </div>
+                            <h3 class="catalog__slider-item-title">
+                                Smoke on the water
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="catalog__slider-item">
+                            <div class="catalog__slider-wrap">
+                                <picture><source srcset="img/catalog/catalog__slide-img.webp" type="image/webp"><img src="img/catalog/catalog__slide-img.png" alt="img" class="catalog__slider-img"></picture>
+                            </div>
+                            <h3 class="catalog__slider-item-title">
+                                Player in C
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="catalog__slider-item">
+                            <div class="catalog__slider-wrap">
+                                <picture><source srcset="img/catalog/catalog__slide-img.webp" type="image/webp"><img src="img/catalog/catalog__slide-img.png" alt="img" class="catalog__slider-img"></picture>
+                            </div>
+                            <h3 class="catalog__slider-item-title">
+                                Миссия невыполнима
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="catalog__slider-item">
+                            <div class="catalog__slider-wrap">
+                                <picture><source srcset="img/catalog/catalog__slide-img.webp" type="image/webp"><img src="img/catalog/catalog__slide-img.png" alt="img" class="catalog__slider-img"></picture>
+                            </div>
+                            <h3 class="catalog__slider-item-title">
+                                Кукла Колдуна
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="catalog__slider-item">
+                            <div class="catalog__slider-wrap">
+                                <picture><source srcset="img/catalog/catalog__slide-img.webp" type="image/webp"><img src="img/catalog/catalog__slide-img.png" alt="img" class="catalog__slider-img"></picture>
+                            </div>
+                            <h3 class="catalog__slider-item-title">
+                                Лесник
+                            </h3>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="catalog__sloder-item-title">
-                    Smoke on the water
-                </h3>
-            </div>
-            <div class="catalog__slider-item">
-                <div class="catalog__slider-wrap">
-                    <!-- <img src="" alt="img" class="catalog__slider-img"> -->
-                </div>
-                <h3 class="catalog__sloder-item-title">
-                    Player in C
-                </h3>
-            </div>
-            <div class="catalog__slider-item">
-                <div class="catalog__slider-wrap">
-                    <!-- <img src="" alt="img" class="catalog__slider-img"> -->
-                </div>
-                <h3 class="catalog__sloder-item-title">
-                    Миссия невыполнима
-                </h3>
-            </div>
-            <div class="catalog__slider-item">
-                <div class="catalog__slider-wrap">
-                    <!-- <img src="" alt="img" class="catalog__slider-img"> -->
-                </div>
-                <h3 class="catalog__sloder-item-title">
-                    Кукла Колдуна
-                </h3>
             </div>
         </div>
-        <a href="#" class="btn catalog__btn">
+        <a href="#tarif" class="btn catalog__btn">
             Хочу также
         </a>
     </div>
@@ -753,7 +789,7 @@
 
     </div>
 </section>
-        <section class="tariff">
+        <section id="tarif" class="tariff">
     <div class="container tariff__container">
         <h2 class="title tariff__title">
             Тарифы
@@ -1008,6 +1044,7 @@
                 Блог
             </a>
         </div>
+        <div class="footer__block_bg"></div>
     </div>
 </section>
     <script type="module" src="js/script.min.js"></script>
