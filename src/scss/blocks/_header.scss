@@ -3,7 +3,7 @@
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 50;
+    z-index: 110;
     background: #f9f9f9;
 }
 .header__container {
@@ -35,6 +35,11 @@
     color: var(--Black, #191919);
     font-size: 18px;
     font-weight: 600;
+    transition: 0.3s;
+    &:hover {
+        transition: 0.3s;
+        color: var(--Primary, #1b37a3);
+    }
     @media (max-width: 600px) {
         font-size: 28.8;
     }
@@ -139,7 +144,7 @@
         transition: 0.5s;
         opacity: 1;
         transform: translateY(0);
-        z-index: 10;
+        z-index: 100;
     }
 }
 .nav_box-mob-list {

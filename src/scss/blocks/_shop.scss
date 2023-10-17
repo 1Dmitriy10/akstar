@@ -71,6 +71,19 @@
 }
 .shop__slider-item {
     flex: 1 0 30.5%;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        width: 24px;
+        height: 24px;
+        background: url("../img/shop/shop__item-heart.png") 0 0 / contain no-repeat;
+        z-index: 20;
+        cursor: pointer;
+    }
 }
 .shop__slider-item-wrap {
     border-radius: 12px;

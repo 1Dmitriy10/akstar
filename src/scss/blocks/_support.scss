@@ -98,6 +98,9 @@
         padding: 19px 69px;
         align-self: flex-start;
     }
+    @media (max-width: 576px) {
+        align-self: center;
+    }
     @media (max-width: 400px) {
         font-size: 20px;
         padding: 15px 40px;
@@ -121,5 +124,8 @@
         font-size: 14px;
         max-width: 291px;
         align-self: flex-start;
+    }
+    @media (max-width: 576px) {
+        align-self: center;
     }
 }

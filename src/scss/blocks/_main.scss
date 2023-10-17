@@ -125,11 +125,11 @@
         &::after {
             content: "";
             position: absolute;
-            top: 341px;
-            left: -20px;
+            top: 55%;
+            left: -51%;
             display: flex;
-            width: 118.4px;
-            height: 75.6px;
+            width: 106.4px;
+            height: 68.6px;
             background: url("../img/main/main__bg-arrow.svg") 0 0 / cover no-repeat;
             @media (max-width: 1350px) {
                 display: none;
@@ -344,6 +344,11 @@
     color: #cecece;
     position: relative;
     padding: 30px 118px 30px 51px;
+    transition: 0.3s;
+    &:hover {
+        transition: 0.3s;
+        background: #061e79;
+    }
     &::after {
         content: "";
         position: absolute;
