@@ -148,7 +148,7 @@
 .nav_box-mob {
     // height: 100vh;
     height: -webkit-fill-available;
-    padding: 25px;
+    padding: 176px 25px 13px 25px;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -167,17 +167,16 @@
     }
 }
 .nav_box-mob-list {
-    padding: 176px 33px 119px 33px;
     display: flex;
     flex-direction: column;
     width: 100%;
+    justify-content: space-between;
 }
 .nav-mob-wrap {
     display: flex;
     flex-direction: column;
     gap: 36px;
     justify-content: flex-start;
-    height: 100%;
 }
 .nav-content {
     display: flex;

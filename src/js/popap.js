@@ -24,8 +24,8 @@ export function getPopup() {
                 popupWrap.innerHTML = "";
                 popupWrap.insertAdjacentHTML("beforeend", `
                 <video width="70%" height="50%" controls>
-                <source src="../files/IMG_8719.MOV" type="video/mp4">
-                </video>
+            <source src="./files/IMG_8719.MOV" type="video/mp4">
+            </video>
                 `)
             }
         }
