@@ -15,6 +15,9 @@
     @media (max-width: 576px) {
         padding: 88px 10px 110px 19px;
     }
+    @media (max-width: 450px) {
+        padding: 77px 10px 75px 19px;
+    }
 }
 .support__up-row {
     max-width: 899px;
@@ -25,6 +28,9 @@
     @media (max-width: 576px) {
         margin-bottom: 46px;
     }
+    @media (max-width: 450px) {
+        margin-bottom: 19px;
+    }
 }
 
 .support__title {
@@ -33,6 +39,10 @@
     @media (max-width: 768px) {
         font-size: 28px;
         max-width: fit-content;
+    }
+    @media (max-width: 450px) {
+        font-size: 24px;
+        margin-bottom: 30px;
     }
 }
 .support__list {
@@ -80,6 +90,14 @@
     }
     @media (max-width: 576px) {
         font-size: 22px;
+    }
+    @media (max-width: 450px) {
+        font-size: 14px;
+        &::before {
+            width: 17.277px;
+            height: 15.277px;
+            font-size: 10.721px;
+        }
     }
 }
 .support__list-item_bold {
@@ -150,5 +168,8 @@
     }
     @media (max-width: 576px) {
         align-self: center;
+    }
+    @media (max-width: 450px) {
+        text-align: center;
     }
 }

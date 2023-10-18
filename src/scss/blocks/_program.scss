@@ -20,6 +20,9 @@
     @media (max-width: 540px) {
         padding: 100px 10px 100px 10px;
     }
+    @media (max-width: 550px) {
+        padding: 124px 10px 100px 10px;
+    }
 }
 .program__title {
     font-weight: 700;
@@ -36,6 +39,10 @@
     @media (max-width: 540px) {
         font-size: 35px;
     }
+    @media (max-width: 450px) {
+        font-size: 38px;
+        margin-bottom: 32px;
+    }
 }
 .program__item-box {
     display: flex;
@@ -50,7 +57,7 @@
         gap: 25px;
     }
     @media (max-width: 576px) {
-        gap: 37px;
+        gap: 29px;
         margin-bottom: 70px;
     }
 }
@@ -68,6 +75,9 @@
     @media (max-width: 576px) {
         min-height: 462px;
         flex: 1 1 47%;
+    }
+    @media (max-width: 450px) {
+        min-height: 387px;
     }
 }
 .program__item-up-row {
@@ -89,6 +99,9 @@
     @media (max-width: 579px) {
         padding: 36px 60px;
     }
+    @media (max-width: 450px) {
+        padding: 19px 20px;
+    }
 }
 .program__item-lesson-box {
     display: flex;
@@ -109,6 +122,10 @@
     width: fit-content;
     padding: 7px 24px;
     margin-bottom: 22px;
+    @media (max-width: 450px) {
+        font-size: 12px;
+        margin-bottom: 13px;
+    }
 }
 .program__item-lesson-description {
     color: #fff;
@@ -117,6 +134,9 @@
     line-height: 127%; /* 33.02px */
     @media (max-width: 850px) {
         font-size: 20px;
+    }
+    @media (max-width: 450px) {
+        font-size: 16px;
     }
 }
 .program__item-play-box {
@@ -172,6 +192,9 @@
     @media (max-width: 540px) {
         padding: 27px 55px 0 46px;
     }
+    @media (max-width: 450px) {
+        padding: 15px 19px 0 19px;
+    }
 }
 .program__item-description-box {
     display: flex;
@@ -193,6 +216,9 @@
     @media (max-width: 576px) {
         font-size: 20px;
     }
+    @media (max-width: 450px) {
+        font-size: 16px;
+    }
 }
 .program__item-description {
     color: #1e1e1e;
@@ -204,6 +230,9 @@
     }
     @media (max-width: 576px) {
         font-size: 20px;
+    }
+    @media (max-width: 450px) {
+        font-size: 14px;
     }
 }
 .program__item-description_bold {
@@ -229,6 +258,9 @@
     }
     @media (max-width: 576px) {
         font-size: 20px;
+    }
+    @media (max-width: 450px) {
+        font-size: 14px;
     }
 }
 .program__item-dop-link {

@@ -55,8 +55,10 @@
     @media (max-width: 560px) {
         min-height: 307px;
     }
-    @media (max-width: 522px) {
-        // margin-top: -320px;
+    @media (max-width: 450px) {
+        margin-top: -102%;
+        background: url("../img/prize/prize__bg-img-1.png") 91% 102% / 369% no-repeat, rgba(249, 249, 249, 0.49);
+        min-height: 337px;
     }
 }
 .prize__title {
@@ -119,6 +121,14 @@
             width: 94px;
         }
     }
+    @media (max-width: 450px) {
+        font-size: 30px;
+        text-align: center;
+        &::after {
+            top: 77%;
+            left: 68%;
+        }
+    }
 }
 .prize__text {
     max-width: 310px;
@@ -136,6 +146,11 @@
     }
     @media (max-width: 540px) {
         margin-left: 0;
+    }
+    @media (max-width: 450px) {
+        font-size: 15px;
+        max-width: 162px;
+        margin-left: 30px;
     }
 }
 .prize__text_bold {
