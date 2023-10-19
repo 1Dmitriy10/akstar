@@ -3,6 +3,7 @@ import Swiper from 'swiper/bundle';
 export const catalogSlider = new Swiper('.catalog__slider', {
     slidesPerView: 1,
     spaceBetween: 24,
+    // centeredSlides: true,
     breakpoints: {
         1200: {
             slidesPerView: 4,
