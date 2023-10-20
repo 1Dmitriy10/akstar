@@ -31,6 +31,7 @@ summary {
 
 body {
   font-family: "Raleway", sans-serif;
+  height: 100%;
 }
 
 .hidden {
@@ -510,7 +511,7 @@ body {
 }
 .burger-menu.active {
   display: flex;
-  width: 40px;
+  width: 32px;
   height: 0;
   background-color: black;
   position: relative;
@@ -518,7 +519,7 @@ body {
 .burger-menu.active::before {
   content: "";
   display: flex;
-  width: 40px;
+  width: 32px;
   height: 3px;
   background-color: black;
   position: absolute;
@@ -529,7 +530,7 @@ body {
 .burger-menu.active::after {
   content: "";
   display: flex;
-  width: 40px;
+  width: 32px;
   height: 3px;
   background-color: black;
   position: absolute;
@@ -552,7 +553,7 @@ body {
 }
 
 .nav_box-mob {
-  height: -webkit-fill-available;
+  min-height: 100vh;
   padding: 100px 25px 50px 25px;
   position: fixed;
   display: flex;
