@@ -584,6 +584,7 @@ body {
   flex-direction: column;
   gap: 36px;
   justify-content: flex-start;
+  height: 100%;
 }
 
 .nav-content {
